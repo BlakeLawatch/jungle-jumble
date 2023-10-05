@@ -42,15 +42,33 @@
     <!-- PRIMARY VIEWPORT -->
   </main>
 
-  <div class="container-fluid">
+  <div class="container-fluid background">
     <section class="row">
       <div class="col-12">
         <h1>Jungle Jumble</h1>
       </div>
     </section>
 
-    <div id="jumble">
+    <div class="row" id="jumble">
 
+    </div>
+
+    <div id="activeJumble">
+
+    </div>
+
+    <div class="container-fluid">
+      <section class="row">
+        <div id="jumbleSentence" class="col-6">
+
+        </div>
+        <div class="col-6">
+          <form>
+            <textarea name="body" id="body" cols="30" rows="10"></textarea>
+            <button type="submit" class="btn btn-success mb-2">Submit</button>
+          </form>
+        </div>
+      </section>
     </div>
 
   </div>

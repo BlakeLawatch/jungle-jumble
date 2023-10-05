@@ -13,14 +13,16 @@ function _drawJumbles() {
 
 function _drawActiveJumble() {
     const activeJumble = AppState.activeJumble
-    console.log(activeJumble)
+    setHTML('activeJumble', activeJumble.name)
+    setHTML('jumbleSentence', activeJumble.body)
+
 }
 
 
 export class JumblesController {
     constructor() {
         _drawJumbles()
-        _drawActiveJumble()
+        AppState.on('activeJumble', _drawActiveJumble)
     }
 
     setActiveJumble(jumbleId) {
