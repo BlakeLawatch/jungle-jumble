@@ -5,10 +5,10 @@ import { AppState } from "../AppState.js";
 
 
 class JumbleService {
-    setActiveJumble(jumbleId) {
-        const activeJumble = AppState.jumbles.find(jumbleFile => jumbleFile.id == jumbleId)
+    setActiveJumble(data) {
+        const activeJumble = AppState.jumbles.find(jumbleFile => jumbleFile.name == data)
         AppState.activeJumble = activeJumble
-        console.log('it works', jumbleId)
+        console.log('it works', data)
     }
 }
 

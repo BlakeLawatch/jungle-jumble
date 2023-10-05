@@ -20,7 +20,7 @@ export class Jumble {
     return `
     <section class="row">
       <div class="col-12">
-        <p role= "button" onclick= "app.JumblesController.ActiveJumble">${this.name}</p>
+        <p role= "button" onclick= "app.JumblesController.setActiveJumble()">${this.name}</p>
         <p>${this.body}</p>
         <p>${this.fastestTime}</p>
         <p>${this.startTime}</p>

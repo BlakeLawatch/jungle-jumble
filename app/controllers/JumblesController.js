@@ -13,6 +13,7 @@ function _drawJumbles() {
 
 function _drawActiveJumble() {
     const activeJumble = AppState.activeJumble
+    console.log(activeJumble)
 }
 
 
