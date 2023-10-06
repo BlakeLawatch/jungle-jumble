@@ -18,13 +18,13 @@ export class Jumble {
 
   get jumbleCard() {
     return `
-      <div class="col-12 background bg-info m-3">
+      <div class="col-12 my-2 cards">
         <p role= "button" onclick= "app.JumblesController.setActiveJumble('${this.id}')">${this.name}</p>
          <p>${this.fastestTime}</p>
         <p>${this.startTime}</p>
         <p>${this.endTime}</p>
       </div>  
-        </section>`
+       `
     // <p>${this.body}</p>
   }
 
